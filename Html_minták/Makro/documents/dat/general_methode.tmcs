@@ -1,0 +1,15 @@
+<div class="col-md-4">
+        <div class="row">
+            <div class="col-6"><a class="btn" href="/PDF-dokumentum.pdf">PDF-dokumentum.pdf</a></div>
+        </div>
+    </div>
+<div class="col-md-4">
+        <div class="row">
+            <div class="col-6"><a class="btn" href="/Kézilabda jsz. teszt 1..docx">Kézilabda jsz. teszt 1..docx</a></div>
+        </div>
+    </div>
+<div class="col-md-4">
+        <div class="row">
+            <div class="col-6"><a class="btn" href="/BevFizTeljes.pdf">BevFizTeljes.pdf</a></div>
+        </div>
+    </div>

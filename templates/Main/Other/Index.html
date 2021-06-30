@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="../../../static/css/bootstrap.min.css" rel="stylesheet">
+    <link  rel="stylesheet" href="../../../static/css/V_style.css">
+    <link  rel="stylesheet" href="../../../stataic/css/font-awsome.min.css">
+    
+</head>
+<body>
+    <div class="container header">
+        <a href="/"><img src="../../../static/image/isolated-layout.svg" class="logo"></a>
+    </div>
+    <div class="container move-details">
+        <div class="row">
+        <div class="col-md-6 left-box">
+            <h1 class="position: central;"></h1>
+        </div>
+    </div>
+    </div>
+    <div class="container series">
+    <div class="row">
+    <div class="col-md-2">
+        <div class="row">
+            <div class="col-6"><a class="btn" href="/Upload">Feltöltés</a></div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="row">
+            <div class="col-6"><a class="btn" href="/os.monitor">System</a></div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="row">
+            <div class="col-6"><a class="btn" href="/os.settings">Settings</a></div>
+        </div>
+    </div>
+    </div>
+    <div class="container move-details">
+        <div class="row">
+        <div class="col-md-6 left-box">
+            <h1 class="position: central;">Filok:</h1>
+        </div>
+    </div>
+    </div>
+    <div class="container series">
+    </div>
+    <script>
+        const button = document.querySelectorAll('a');
+        button.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+                let ripples = document.createElement('span');
+                ripples.style.left = x + 'px';
+                ripples.style.top = y + 'px';
+                this.appendChild(ripples);
+
+                setTimeout(() => {
+                    ripples.remove()
+                }, 1000);
+            })
+        })
+    </script>
+    
+</body> 
